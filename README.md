@@ -1,5 +1,25 @@
 # Prompt Studio
 
+## Prompt 狀態流程
+
+目前使用兩個狀態：`draft`（草稿／測試中）及 `stable`（已定稿，可日常使用）。
+
+```mermaid
+stateDiagram-v2
+    [*] --> draft: 新增 Prompt
+    draft --> draft: 修改、測試
+    draft --> stable: 確認定稿
+    stable --> stable: 小幅修訂
+    stable --> draft: 重新設計
+```
+
+- `draft`：尚未定稿，可反覆修改及測試。
+- `stable`：已確認可使用；仍可修訂，必要時退回 `draft`。
+- `status` 表示成熟程度；`version` 表示修訂版本。建議初稿使用 `0.x.x`，首次定稿使用 `1.0.0`。
+- 這是**管理約定**，不是程式強制執行的狀態機。目前網站只顯示狀態，不會自動驗證轉換。
+- 每次修改請更新 `updated_at`（同一天修改時日期可能不變）；Git Commit 保留詳細歷史。
+- Prompt 不會因為進入 `stable` 而刪除或停止顯示。
+
 個人 Prompt Library。使用 GitHub 儲存 Prompt 原始檔，GitHub Pages 顯示唯讀網站。
 
 ## 專案結構
