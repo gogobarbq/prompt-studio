@@ -20,3 +20,12 @@ footer{max-width:1250px;margin:0 auto;padding:5px 25px 35px;color:#87968a;font-s
 .item-id{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#4c8060;font-size:12px}
 .copy-id{font-size:11px;letter-spacing:0;text-transform:none;border:1px solid #cbdace;border-radius:6px;background:#fff;color:#2f5840;padding:3px 7px;margin-left:6px;cursor:pointer;vertical-align:middle}
 .copy-id:hover{background:#eff8f1}
+
+/* Prompt detail metadata: lifecycle status is separate from classification and history. */
+.detail-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.status-badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:700;line-height:1.3;text-transform:lowercase;white-space:nowrap}
+.status-badge.is-stable{background:#e0eee5;color:#245b3c;border:1px solid #a4cbb2}
+.status-badge.is-draft{background:#f2f2ed;color:#756b4d;border:1px solid #ddd9c8}
+.meta-groups{display:flex;flex-direction:column;gap:9px;margin-bottom:22px}
+.meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:7px;min-height:26px}
+.meta-row:empty{display:none}
