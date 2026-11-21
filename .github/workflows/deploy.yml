@@ -27,3 +27,4 @@ jobs:
             git add docs/prompts.json
             git commit -m "chore: rebuild prompt index"
             git push
+          fi
