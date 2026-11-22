@@ -1,0 +1,30 @@
+/* My Ear shared Blogger article stylesheet v1.0.0
+   Safe to publish: presentation rules only; no transcript or company data.
+   Wrap article markup in <article class="myear">.
+   Blogger post HTML may strip external stylesheets: embed this CSS in a <style> tag. */
+.myear{--me-ink:#263b34;--me-muted:#61746b;--me-accent:#37795d;--me-soft:#edf6ef;--me-border:#d9e6dc;--me-white:#fff;color:var(--me-ink);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:16px;line-height:1.85;max-width:960px;width:100%;margin:0 auto;box-sizing:border-box;overflow-wrap:anywhere}
+.myear,.myear *{box-sizing:border-box}
+.myear h1,.myear h2,.myear h3{line-height:1.4;color:var(--me-ink);font-weight:700;overflow-wrap:anywhere}
+.myear h1{font-size:1.8rem;margin:0 0 .55rem}
+.myear h2{font-size:1.35rem;margin:2.2rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid var(--me-border)}
+.myear h3{font-size:1.1rem;margin:1.5rem 0 .55rem}
+.myear p{margin:.65rem 0 1rem}
+.myear .me-meta,.myear .me-caption{font-size:.9rem;color:var(--me-muted)}
+.myear .me-summary,.myear .me-note{padding:1rem 1.15rem;background:var(--me-soft);border-left:3px solid var(--me-accent);border-radius:6px;margin:1.2rem 0}
+.myear a{color:var(--me-accent);text-underline-offset:3px}
+.myear .me-grid{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:26px;align-items:start}
+.myear .me-main{min-width:0}
+.myear .me-toc{position:sticky;top:20px;max-height:calc(100vh - 40px);overflow:auto;border:1px solid var(--me-border);background:var(--me-white);border-radius:10px;padding:12px;font-size:.88rem}
+.myear .me-toc a{display:block;padding:3px 0;text-decoration:none}
+.myear .me-toc .me-sub{padding-left:14px}
+.myear .me-table-scroll{width:100%;max-width:100%;overflow-x:auto;margin:1.2rem 0}
+.myear table{width:100%;border-collapse:collapse;font-size:.93rem}
+.myear th,.myear td{padding:.65rem .75rem;border:1px solid var(--me-border);vertical-align:top;text-align:left}
+.myear th{background:var(--me-soft)}
+.myear details{border:1px solid var(--me-border);border-radius:8px;padding:.65rem .9rem;margin:.65rem 0;background:var(--me-white)}
+.myear summary{cursor:pointer;font-weight:600}
+.myear pre{overflow-x:auto;padding:1rem;background:#f5f7f5;border-radius:8px}
+.myear code{overflow-wrap:anywhere}
+.myear img,.myear svg{max-width:100%;height:auto}
+.myear .me-card{border:1px solid var(--me-border);border-radius:10px;padding:1rem;margin:1rem 0}
+@media(max-width:760px){.myear{font-size:15px}.myear h1{font-size:1.55rem}.myear .me-grid{display:flex;flex-direction:column}.myear .me-toc{position:static;order:-1;width:100%;max-height:none}.myear .me-main{width:100%}}
