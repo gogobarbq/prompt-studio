@@ -1,4 +1,4 @@
-/* My Ear shared Blogger article stylesheet v1.1.0
+/* My Ear shared Blogger article stylesheet v1.1.1
    Safe to publish: presentation rules only; no transcript or company data.
    Wrap article markup in <article class="myear">.
    Blogger post HTML may strip external stylesheets: embed this CSS in a <style> tag. */
@@ -23,3 +23,6 @@
 .myear img,.myear svg{max-width:100%;height:auto}
 .myear .me-card{border:1px solid var(--me-border);border-radius:10px;padding:1rem;margin:1rem 0}
 @media(max-width:760px){.myear{font-size:15px}.myear h1{font-size:1.55rem}}
+
+/* Isolate article mind maps from Blogger icon sizing. */
+.myear svg.me-mindmap{width:100%!important;height:auto!important;max-width:100%!important;display:block}
