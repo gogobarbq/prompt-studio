@@ -1,6 +1,6 @@
 # My Ear 共用 HTML 排版規則
 
-版本：1.1.0（2026-11-22）
+版本：1.1.1（2026-11-28）
 
 ## 用途與來源
 本規格供 My Ear 的 IoT（p0006）與 TOI（p0007）共用。依 p0006 已明定的淡綠／白色、簡潔 Blogger 風格，以及使用者要求的跨類型一致性設計。**這不是從已發佈的 IoT HTML 精確擷取的 CSS**；若要像素級一致，須再比對實際 HTML。
@@ -31,3 +31,6 @@
 4. 表格可水平捲動；圖片、SVG 不溢出。
 5. 保留各 Prompt 的來源忠實度與知識架構規則。
 6. 如未在實際 Blogger 主題測試，不宣稱已完成發布相容性驗證。
+
+## Blogger SVG 樣式隔離
+心智圖根 SVG 必須使用 class="me-mindmap"，保留 viewBox，並使用共用 CSS 的專屬尺寸規則。不可只依賴 width 屬性或 max-width。驗收時模擬佈景主題 svg { width:24px; height:24px; fill:currentColor; }，確認心智圖仍填滿容器；實際 Blogger 驗證另行記錄。
